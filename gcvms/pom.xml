@@ -798,7 +798,7 @@ GRANT CONNECT, RESOURCE TO ${database.user};
 		<defaultGoal>jetty:run</defaultGoal>
 		<resources>
 			<resource>
-				<directory>${maven-celerio-plugin.outputDir}/src/main/resources</directory>
+				<directory>${project.basedir}/src/main/resources</directory>
 				<filtering>true</filtering>
 			</resource>
 			<resource>
@@ -808,7 +808,7 @@ GRANT CONNECT, RESOURCE TO ${database.user};
 		</resources>
 		<testResources>
 			<testResource>
-				<directory>${maven-celerio-plugin.outputDir}/src/test/resources</directory>
+				<directory>${project.basedir}/src/test/resources</directory>
 				<filtering>true</filtering>
 			</testResource>
 			<testResource>
@@ -853,8 +853,8 @@ GRANT CONNECT, RESOURCE TO ${database.user};
 					<showDeprecation>true</showDeprecation>
 				</configuration>
 			</plugin>
-			<plugin>
-				<!-- http://mojo.codehaus.org/build-helper-maven-plugin/ -->
+			<!-- <plugin>
+				http://mojo.codehaus.org/build-helper-maven-plugin/
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>build-helper-maven-plugin</artifactId>
 				<version>1.7</version>
@@ -886,7 +886,7 @@ GRANT CONNECT, RESOURCE TO ${database.user};
 						</configuration>
 					</execution>
 				</executions>
-			</plugin>
+			</plugin> -->
 			<plugin>
 				<!-- http://wiki.eclipse.org/Jetty/Feature/Jetty_Maven_Plugin -->
 				<groupId>org.mortbay.jetty</groupId>
@@ -897,9 +897,9 @@ GRANT CONNECT, RESOURCE TO ${database.user};
 					<stopPort>9999</stopPort>
 					<webAppConfig>
 						<contextPath>${application.contextpath}</contextPath>
-						<overrideDescriptor>${maven-celerio-plugin.outputDir}/src/main/config/maven-jetty-plugin/web-development.xml</overrideDescriptor>
+						<overrideDescriptor>${project.basedir}/src/main/config/maven-jetty-plugin/web-development.xml</overrideDescriptor>
 						<baseResource implementation="org.eclipse.jetty.util.resource.ResourceCollection">
-							<resourcesAsCSV>${project.basedir}/src/main/webapp/,${maven-celerio-plugin.outputDir}/src/main/webapp/</resourcesAsCSV>
+							<resourcesAsCSV>${project.basedir}/src/main/webapp/,${project.basedir}/src/main/webapp/</resourcesAsCSV>
 						</baseResource>
 					</webAppConfig>
 					<connectors>
@@ -999,7 +999,7 @@ GRANT CONNECT, RESOURCE TO ${database.user};
 				<configuration>
 					<webResources>
 						<resource>
-							<directory>${maven-celerio-plugin.outputDir}/src/main/webapp</directory>
+							<directory>${project.basedir}/src/main/webapp</directory>
 						</resource>
 					</webResources>
 				</configuration>

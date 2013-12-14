@@ -23,8 +23,7 @@
 		</f:facet>
 	</h:head>
 	<h:body>
-		<p:growl widgetVar="growlNotificationBar" showDetail="true" sticky="false" life="1500" for="seleniumOnly" />
-		<div class="environment #{environmentService.environment}"/>
+		<p:growl widgetVar="growlNotificationBar" showDetail="true" sticky="false" life="1500" for="seleniumOnly" />		
 		<h:form id="form" enctype="multipart/form-data; charset=utf-8" prependId="#{empty prependId or prependId}">
 			<!-- regular layout (does not work with chromeshades) -->
 			<p:layout fullPage="true" >
@@ -34,7 +33,7 @@
 							<tr>
 								<td width="179px">
 									<h:outputLink value="http://127.0.0.1/8080/gcvms" title="GCVMS"><div class="logo"/></h:outputLink>
-								    <h:outputText class="version" value="#{versionService.format()}" />
+								    <h:outputText class="version" value="" />
 								</td>
 								<td width="70%" align="center">
 									<h1>#{empty title? msg.main_title : resourcesUtil.getProperty(title)}</h1>

@@ -276,20 +276,10 @@ div.ui-tabs div.ui-tabs-panel {
 	z-index: 1000;
 }
 
-.Development {
-	background: transparent url("#{resource['icons/environment/development.gif']}") no-repeat center left;
-}
-.Integration {
-	background: transparent url("#{resource['icons/environment/integration.gif']}") no-repeat center left;
-}
-.Production {
-	background: transparent url("#{resource['icons/environment/production.gif']}") no-repeat center left;
-}
-
 .logo {
-	background: transparent url("#{resource['img/logo.png']}") no-repeat center left;
+	background: transparent url("#{resource['img/logo.gif']}") no-repeat center left;
 	width: 179px;
-	height: 63px;
+	height: 124px;
 }
 
 .version {

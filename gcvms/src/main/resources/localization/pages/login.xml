@@ -13,9 +13,7 @@
 	<entry key="session_expired">Your session has expired... please login again.</entry>
 	<entry key="login_description"><![CDATA[
 		<p>
-			If you used our database schema example or if Celerio could
-			not detect in your database schema the table used to store username/password pairs, you
-			should use:
+			For demo purpose use:
 		</p>
 		<ul>
 			<li><strong>admin/admin</strong>: can access all data</li>
