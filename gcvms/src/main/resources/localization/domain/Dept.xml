@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<comment>Domain resources for Dept</comment>
+
+	<entry key="dept">Dept</entry>
+	<entry key="dept_search">Search Dept</entry>
+	<entry key="dept_create">Create Dept</entry>
+	<entry key="dept_edit">Edit {0}</entry>
+	<entry key="dept_view">View {0}</entry>
+
+	<!-- attributes -->
+	<entry key="dept_id">Id</entry>
+	<entry key="dept_name">Name</entry>
+
+	<!-- uniques -->
+	<entry key="dept_composite_unique_constraint_error">A composite unique constraint has failed on Dept</entry>
+</properties>

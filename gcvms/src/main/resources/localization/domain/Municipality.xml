@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<comment>Domain resources for Municipality</comment>
+
+	<entry key="municipality">Municipality</entry>
+	<entry key="municipality_search">Search Municipality</entry>
+	<entry key="municipality_create">Create Municipality</entry>
+	<entry key="municipality_edit">Edit {0}</entry>
+	<entry key="municipality_view">View {0}</entry>
+
+	<!-- attributes -->
+	<entry key="municipality_id">Id</entry>
+	<entry key="municipality_name">Name</entry>
+
+	<!-- uniques -->
+	<entry key="municipality_composite_unique_constraint_error">A composite unique constraint has failed on Municipality</entry>
+</properties>

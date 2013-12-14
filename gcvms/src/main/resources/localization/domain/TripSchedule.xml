@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<comment>Domain resources for TripSchedule</comment>
+
+	<entry key="tripSchedule">Trip Schedule</entry>
+	<entry key="tripSchedule_search">Search Trip Schedule</entry>
+	<entry key="tripSchedule_create">Create Trip Schedule</entry>
+	<entry key="tripSchedule_edit">Edit {0}</entry>
+	<entry key="tripSchedule_view">View {0}</entry>
+
+	<!-- attributes -->
+	<entry key="tripSchedule_id">Id</entry>
+	<entry key="tripSchedule_vehicleId">Vehicle Id</entry>
+	<entry key="tripSchedule_routeId">Route Id</entry>
+	<entry key="tripSchedule_tripCnt">Trip Cnt</entry>
+	<entry key="tripSchedule_startDt">Start Dt</entry>
+	<entry key="tripSchedule_endDt">End Dt</entry>
+	<entry key="tripSchedule_createdBy">Created By</entry>
+	<entry key="tripSchedule_createdDate">Created Date</entry>
+
+	<!-- x-to-one -->
+	<entry key="tripSchedule_route">Route</entry>
+	<entry key="tripSchedule_vehicle">Vehicle</entry>
+
+	<!-- uniques -->
+	<entry key="tripSchedule_composite_unique_constraint_error">A composite unique constraint has failed on Trip Schedule</entry>
+</properties>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<comment>Domain resources for DailyTrip</comment>
+
+	<entry key="dailyTrip">Daily Trip</entry>
+	<entry key="dailyTrip_search">Search Daily Trip</entry>
+	<entry key="dailyTrip_create">Create Daily Trip</entry>
+	<entry key="dailyTrip_edit">Edit {0}</entry>
+	<entry key="dailyTrip_view">View {0}</entry>
+
+	<!-- attributes -->
+	<entry key="dailyTrip_id">Id</entry>
+	<entry key="dailyTrip_tripDate">Trip Date</entry>
+	<entry key="dailyTrip_vehicleId">Vehicle Id</entry>
+	<entry key="dailyTrip_routeId">Route Id</entry>
+	<entry key="dailyTrip_tripTime">Trip Time</entry>
+	<entry key="dailyTrip_supervisorId">Supervisor Id</entry>
+
+	<!-- x-to-one -->
+	<entry key="dailyTrip_vehicle">Vehicle</entry>
+	<entry key="dailyTrip_route">Route</entry>
+	<entry key="dailyTrip_supervisor">Supervisor</entry>
+
+	<!-- uniques -->
+	<entry key="dailyTrip_composite_unique_constraint_error">A composite unique constraint has failed on Daily Trip</entry>
+</properties>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<comment>Domain resources for VehicleTyp</comment>
+
+	<entry key="vehicleTyp">Vehicle Typ</entry>
+	<entry key="vehicleTyp_search">Search Vehicle Typ</entry>
+	<entry key="vehicleTyp_create">Create Vehicle Typ</entry>
+	<entry key="vehicleTyp_edit">Edit {0}</entry>
+	<entry key="vehicleTyp_view">View {0}</entry>
+
+	<!-- attributes -->
+	<entry key="vehicleTyp_id">Id</entry>
+	<entry key="vehicleTyp_typName">Typ Name</entry>
+	<entry key="vehicleTyp_capacity">Capacity</entry>
+	<entry key="vehicleTyp_capUnit">Cap Unit</entry>
+	<entry key="vehicleTyp_createdBy">Created By</entry>
+	<entry key="vehicleTyp_createdDate">Created Date</entry>
+
+	<!-- uniques -->
+	<entry key="vehicleTyp_composite_unique_constraint_error">A composite unique constraint has failed on Vehicle Typ</entry>
+</properties>
