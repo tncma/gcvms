@@ -32,7 +32,7 @@
 						<table width="100%">
 							<tr>
 								<td width="179px">
-									<h:outputLink value="http://127.0.0.1/8080/gcvms" title="GCVMS"><div class="logo"/></h:outputLink>
+									<h:outputLink value="http://127.0.0.1:8080/gcvms" title="GCVMS"><div class="logo"/></h:outputLink>
 								    <h:outputText class="version" value="" />
 								</td>
 								<td width="70%" align="center">
@@ -53,12 +53,8 @@
 					<div role="navigation">
 						<p:toolbar>
 							<ui:insert name="toolbarChildren"/>
-							<p:toolbarGroup align="right">
-								<p:menuButton
-									value="#{resourcesUtil.getPluralableProperty('menu_active_flows', conversationManager.nbConversations)}"
-									model="#{conversationMenu.model}" 
-									rendered="#{conversationMenu.render}"/>
-								<p:menuButton value="Domain">
+							<p:toolbarGroup align="right">								
+								<p:menuButton value="Menus">
 									<p:menuitem value="#{msg.dailyTrip}" action="#{dailyTripController.beginSearch()}" rendered="#{dailyTripPermission.canSearch()}" />
 									<p:menuitem value="#{msg.dept}" action="#{deptController.beginSearch()}" rendered="#{deptPermission.canSearch()}" />
 									<p:menuitem value="#{msg.employee}" action="#{employeeController.beginSearch()}" rendered="#{employeePermission.canSearch()}" />
@@ -67,13 +63,7 @@
 									<p:menuitem value="#{msg.tripSchedule}" action="#{tripScheduleController.beginSearch()}" rendered="#{tripSchedulePermission.canSearch()}" />
 									<p:menuitem value="#{msg.vehicle}" action="#{vehicleController.beginSearch()}" rendered="#{vehiclePermission.canSearch()}" />
 									<p:menuitem value="#{msg.vehicleTyp}" action="#{vehicleTypController.beginSearch()}" rendered="#{vehicleTypPermission.canSearch()}" />
-								</p:menuButton>
-								<p:menuButton value="Debug" id="debug">
-									<p:menuitem id="throwException" value="Throw exception" action="#{exceptionUtil.throwRuntimeException()}" process="@this" ajax="false" immediate="true" icon="ui-icon ui-icon-alert" />
-									<p:menuitem id="throwAjaxException" value="Throw ajax exception" action="#{exceptionUtil.throwRuntimeException()}" update="messages" process="@this" ajax="true" immediate="true" icon="ui-icon ui-icon-alert" style="width:300px"/>
-									<p:menuitem id="throwDataAccessException" value="Throw data access exception" action="#{exceptionUtil.throwDataAccessException()}" process="@this" ajax="false" immediate="true" icon="ui-icon ui-icon-alert" style="width:350px"/>
-									<p:menuitem id="thowAjaxDataAccessException" value="Throw ajax data access exception" action="#{exceptionUtil.throwDataAccessException()}" update="messages" process="@this" ajax="true" immediate="true" icon="ui-icon ui-icon-alert" style="width:800px"/>
-								</p:menuButton>
+								</p:menuButton>								
 							</p:toolbarGroup>
 						</p:toolbar>
 						<p:outputPanel rendered="#{readonly}">
