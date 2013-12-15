@@ -1,7 +1,10 @@
 gcvms - Garbage Collection Vehicle Management System
+
+http://180.215.31.186:8080/gcvms/home.faces
+
 =====
 Team memebers
-  1. karthikeyan Gunasekaran
+  1. Karthikeyan Gunasekaran
   2. Dinesh Krishnan Arumugam
   
 _______________________________________________________________
@@ -20,6 +23,10 @@ Project Description:
       based on each vehicle mileage, route coverage distance, vehicle capacity and garbage loaded.
     These information helps to optimize the collection route of the vehicle to the land fill area.
     In future this can help to segregate the wet & solid waste collection effectively.
+
+
+
+
     
     
     
