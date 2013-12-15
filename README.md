@@ -1,4 +1,4 @@
-gcvms - Garbage Collection Vehicle Management System
+GCVMS - Garbage Collection Vehicle Management System
 
 http://180.215.31.186:8080/gcvms/home.faces
 
